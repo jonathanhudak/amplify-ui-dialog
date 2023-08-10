@@ -11,6 +11,7 @@ import {
   Heading,
   Grid,
   Flex,
+  Link,
 } from "@aws-amplify/ui-react";
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
       >
         <Flex alignItems="center" justifyContent="center" direction="column">
           <Heading level={1}>Amplify UI Dialog</Heading>
+          <Link href="https://github.com/jonathanhudak/amplify-ui-dialog">
+            https://github.com/jonathanhudak/amplify-ui-dialog
+          </Link>
           <pre>
             <Text as="em">
               {`
@@ -79,6 +83,7 @@ function App() {
             alignContent="center"
             alignItems="center"
           >
+            <Text>Color Mode:</Text>
             <ToggleButtonGroup
               value={colorMode}
               isExclusive
@@ -88,7 +93,6 @@ function App() {
               <ToggleButton value="dark">Dark</ToggleButton>
               <ToggleButton value="system">System</ToggleButton>
             </ToggleButtonGroup>
-            <Text>Current color mode: {colorMode}</Text>
           </Flex>
         </Card>
       </Grid>
